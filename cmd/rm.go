@@ -31,7 +31,7 @@ func Rm(s *session.Session, list, name string) error {
 		colors.Color("List: ", colors.TEAL) +
 			lName +
 			colors.Color("\nName: ", colors.TEAL) +
-			name,
+			(*card).Name,
 	)
 	prompt := fmt.Sprintf(
 		colors.Color("ARCHIVE a card:\n", colors.ORANGE) +
@@ -43,7 +43,7 @@ func Rm(s *session.Session, list, name string) error {
 		if err != nil {
 			return err
 		}
-		fmt.Println("Archived card succsfully.")
+		fmt.Println("Archived card successfully.")
 	}
 	return nil
 }

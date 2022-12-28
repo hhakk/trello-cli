@@ -74,7 +74,7 @@ func Add(s *session.Session, list, name, desc, due, mem string) error {
 			return err
 		}
 
-		fmt.Println("Added card succesfully.")
+		fmt.Println("Added card successfully.")
 	}
 	return nil
 }
